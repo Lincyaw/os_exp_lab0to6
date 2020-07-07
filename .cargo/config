@@ -1,0 +1,15 @@
+[source.crates-io]
+registry = "https://github.com/rust-lang/crates.io-index"
+replace-with = 'ustc'
+[source.ustc]
+registry = "git://mirrors.ustc.edu.cn/crates.io-index"
+
+# 编译的目标平台
+[build]
+target = "riscv64imac-unknown-none-elf"
+
+# 使用我们的 linker script 来进行链接
+[target.riscv64imac-unknown-none-elf]
+rustflags = [
+    "-C", "link-arg=-Tsrc/linker/linker.ld",
+]
