@@ -1,6 +1,4 @@
-use riscv::register::{sstatus::Sstatus, scause::Scause};
-use core::fmt;
-use core::mem::zeroed;
+use riscv::register::{sstatus::Sstatus};
 #[repr(C)]
 #[derive(Debug)]
 pub struct Context{
