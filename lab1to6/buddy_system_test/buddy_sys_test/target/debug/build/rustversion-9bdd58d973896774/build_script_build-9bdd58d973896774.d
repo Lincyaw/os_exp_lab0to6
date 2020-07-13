@@ -1,0 +1,6 @@
+/home/lincyawer/buddy_system_test/buddy_sys_test/target/debug/build/rustversion-9bdd58d973896774/build_script_build-9bdd58d973896774: /home/lincyawer/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rustversion-1.0.3/build/build.rs /home/lincyawer/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rustversion-1.0.3/build/rustc.rs
+
+/home/lincyawer/buddy_system_test/buddy_sys_test/target/debug/build/rustversion-9bdd58d973896774/build_script_build-9bdd58d973896774.d: /home/lincyawer/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rustversion-1.0.3/build/build.rs /home/lincyawer/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rustversion-1.0.3/build/rustc.rs
+
+/home/lincyawer/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rustversion-1.0.3/build/build.rs:
+/home/lincyawer/.cargo/registry/src/mirrors.ustc.edu.cn-61ef6e0cd06fb9b8/rustversion-1.0.3/build/rustc.rs:

@@ -1,0 +1,40 @@
+{"message":"incremental compilation: could not create session directory lock file: 函数不正确。 (os error 1)","code":null,"level":"error","spans":[],"children":[],"rendered":"\u001b[0m\u001b[1m\u001b[38;5;9merror\u001b[0m\u001b[0m\u001b[1m\u001b[38;5;15m: incremental compilation: could not create session directory lock file: 函数不正确。 (os error 1)\u001b[0m\n\n"}
+thread 'rustc' panicked at 'trying to get session directory from `IncrCompSession`: NotInitialized', src\librustc_session\session.rs:838:48
+stack backtrace:
+   0: <std::sys_common::backtrace::_print::DisplayBacktrace as core::fmt::Display>::fmt
+   1: core::fmt::write
+   2: <std::io::IoSliceMut as core::fmt::Debug>::fmt
+   3: std::panicking::take_hook
+   4: std::panicking::take_hook
+   5: rustc_driver::report_ice
+   6: std::panicking::rust_panic_with_hook
+   7: rust_begin_unwind
+   8: std::panicking::begin_panic_fmt
+   9: rustc_session::session::Session::incr_comp_session_dir
+  10: rustc_incremental::persist::fs::garbage_collect_session_directories
+  11: rustc_interface::queries::<impl rustc_interface::interface::Compiler>::compile
+  12: rustc_interface::queries::Queries::register_plugins
+  13: <rustc_lint::BuiltinCombinedEarlyLintPass as rustc_lint::passes::EarlyLintPass>::check_path
+  14: <env_logger::filter::inner::Filter as core::fmt::Display>::fmt
+  15: <rustc_span::symbol::SymbolStr as core::fmt::Display>::fmt
+  16: <rustc_lint::BuiltinCombinedEarlyLintPass as rustc_lint::passes::EarlyLintPass>::check_path
+  17: std::sys::windows::thread::Thread::new
+  18: BaseThreadInitThunk
+  19: RtlUserThreadStart
+note: Some details are omitted, run with `RUST_BACKTRACE=full` for a verbose backtrace.
+
+error: internal compiler error: unexpected panic
+
+note: the compiler unexpectedly panicked. this is a bug.
+
+note: we would appreciate a bug report: https://github.com/rust-lang/rust/blob/master/CONTRIBUTING.md#bug-reports
+
+note: rustc 1.46.0-nightly (7750c3d46 2020-06-26) running on x86_64-pc-windows-msvc
+
+note: compiler flags: -C embed-bitcode=no -C debuginfo=2 -C incremental -C link-arg=-Tsrc/linker.ld
+
+note: some of the compiler flags provided by cargo are hidden
+
+query stack during panic:
+end of query stack
+{"message":"aborting due to previous error","code":null,"level":"error","spans":[],"children":[],"rendered":"\u001b[0m\u001b[1m\u001b[38;5;9merror\u001b[0m\u001b[0m\u001b[1m\u001b[38;5;15m: aborting due to previous error\u001b[0m\n\n"}

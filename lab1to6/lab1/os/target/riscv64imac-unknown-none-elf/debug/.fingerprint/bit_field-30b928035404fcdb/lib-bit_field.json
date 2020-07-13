@@ -1,0 +1,1 @@
+{"rustc":2736761484755903676,"features":"[]","target":2226500782426409248,"profile":16668067249205866872,"path":4065522188518602880,"deps":[],"local":[{"CheckDepInfo":{"dep_info":"riscv64imac-unknown-none-elf\\debug\\.fingerprint\\bit_field-30b928035404fcdb\\dep-lib-bit_field"}}],"rustflags":["-C","link-arg=-Tsrc/linker.ld"],"metadata":17425952649129549558,"config":0}
